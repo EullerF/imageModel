@@ -1,17 +1,16 @@
 def is_prime(n: int) -> bool:
-    """
-    Verifica se um número é primo.
+    """Verifica se um número é primo.
 
     Um número primo é maior que 1 e não tem divisores positivos além de 1 e ele mesmo.
 
     Args:
-        n (int): O número a ser verificado.
+        n (int): Número inteiro a ser verificado.
 
     Returns:
         bool: True se o número for primo, False caso contrário.
 
     Raises:
-        ValueError: Se a entrada não for um inteiro.
+        ValueError: Se `n` não for um inteiro.
     """
     if not isinstance(n, int):
         raise ValueError("A entrada deve ser um inteiro")
